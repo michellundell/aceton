@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+/* copied from internet academy */
+
 int main(int argc, char **argv)
 {
     char buff[15];
