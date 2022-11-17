@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-
 int copy_buf (char *to, int pos, char *from, int len)
 {
     int i;
@@ -21,8 +20,9 @@ int main(int argc, char **argv)
     printf("\n Enter the password : \n");
     scanf("%s",buff);
 
-    copy_buf( otherbuf, 7, buff, 4);
 
+    copy_buf( otherbuf, 7, buff, 4);
+    
     if(strcmp(buff, "thesecretpassword"))
     {
         printf ("\n Wrong Password \n");
