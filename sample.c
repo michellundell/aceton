@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-/* copied from internet academy */
+/* copied from Internet academy */
 
 int main(int argc, char **argv)
 {
