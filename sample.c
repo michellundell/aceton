@@ -1,15 +1,26 @@
 #include <stdio.h>
 #include <string.h>
 
-/* copied from Internet academy */
+int copy_buf (char *to, int pos, char *from, int len)
+{
+    int i;
+    for (i=0;i<len;i++)
+    {
+         to[pos] = from [i];
+         pos++;
+    }
+    return pos;
+}
 
 int main(int argc, char **argv)
 {
-    char buff[15];
+    char buff[15],otherbuf[10];
     int pass = 0;
 
     printf("\n Enter the password : \n");
-    gets(buff);
+    scanf("%s",buff);
+
+    copy_buf( otherbuf, 7, buff, 4);
 
     if(strcmp(buff, "thesecretpassword"))
     {
