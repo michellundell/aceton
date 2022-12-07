@@ -17,8 +17,12 @@ int main(int argc, char **argv)
     char buff[15],otherbuf[10];
     int pass = 0;
 
-    printf("\n Enter the password : \n");
-    scanf("%s",buff);
+    if( argc != 2 ) {
+        printf("\n Enter the password : \n");
+        scanf("%s",buff);
+    } else {
+        strcpy(buff,argv[1]);
+    }
 
     copy_buf( buff, 3, otherbuf, 4);
 
